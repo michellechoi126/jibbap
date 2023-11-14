@@ -13,17 +13,12 @@ a {
     text-decoration: none;
 }
 
-img {
-    width: 100%;
-}
-
 header {
-    
     display: flex;
 }
 
 nav {
-    /* display: none; */
+    display: none;
 }
 
 nav ul {
@@ -39,15 +34,29 @@ nav ul {
 .hamburger-icon {
     position: absolute;
     top: 3%;
+    left: 2%;
+    padding: 0;
     border: none;
     color: transparent;
     background-color: transparent;
+    transition: .2s ease-in-out;
+}
+
+.hamburger-icon:hover {
+    transform: scale(1.1);
+}
+
+.title img {
+    width: 5%;
+    height: 60%;
+    margin: 0.5rem;
 }
 
 .title {
     width: 100vw;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 main {

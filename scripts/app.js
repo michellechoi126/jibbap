@@ -80,3 +80,8 @@ const recipes = [
     }
 ]
 
+/* === DOM Elements === */
+const navEl = document.querySelector('nav');
+const hamburgEl = document.querySelector('#hamburger');
+
+
