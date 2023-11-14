@@ -4,11 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/main.css">
-    <script defer src="/scripts/app.js"></script>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/2cd6f8baf6.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="styles/main.css">
+    <script defer src="scripts/app.js"></script>
+    
     <title>Jibbap</title>
 </head>
 <body>
-    <h1>hello world!</h1>
+    <header>
+        <nav>
+            <ul>
+                <a href="#" class="nav-link">Home</a>
+                <a href="#" class="nav-link">Recipes</a>
+                <a href="#" class="nav-link">About</a>
+            </ul>
+        </nav>
+        <button class="hamburger-icon" id="hamburger">
+            <svg viewBox="0 0 100 80" width="40" height="40">
+                <rect width="75" height="10"></rect>
+                <rect y="30" width="75" height="10"></rect>
+                <rect y="60" width="75" height="10"></rect>
+            </svg>
+        </button>
+        <div class="title">
+            <h1>JibBap</h1>
+        </div>
+    </header>
+    <main>
+        <div class="random-recipe">
+            <div class="recipe-img">
+                <img src="https://worldstrides.com/wp-content/uploads/2015/07/MAP_Korea_gyeonbokgung-palace-seoul_18759736.jpg" alt="recipe image">
+                <p class="recipe-name">Placeholder Recipe Name</p>
+            </div>
+            <div class="challenge-instruction">
+                <h2>Recipe Challenge!</h2>
+                <h3>
+                    Welcome to the world of Korean cuisine. If you're new to cooking korean food and don't know where to start, try challenging yourself with a new recipe 
+                    generated at random. Click the button the below to accept the challenge and explore new korean recipes.
+                </h3>
+                <button class="challenge-btn">도전 콜</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>© Michelle McPherson 2023</p>
+        <div>
+            <a href="https://github.com/michellechoi126"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/michellemcpherson126/"><i class="fa-brands fa-linkedin"></i></i></a>
+        </div>
+    </footer>
 </body>
 </html>

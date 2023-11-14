@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('https://img.freepik.com/premium-vector/abstract-simple-dot-pattern-design-decoration-background_121035-35.jpg?w=2000');
+    background-repeat: repeat;
+    background-size: 10px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+header {
+    
+    display: flex;
+}
+
+nav {
+    /* display: none; */
+}
+
+nav ul {
+    padding: 0px;
+    position: fixed;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;
+}
+
+.hamburger-icon {
+    position: absolute;
+    top: 3%;
+    border: none;
+    color: transparent;
+    background-color: transparent;
+}
+
+.title {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    min-height: calc(90vh - 4rem);
+}
+
+.random-recipe {
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.recipe-img {
+    background-color: rgb(237, 235, 229);
+    border: 4px solid rgb(107, 107, 107);
+    box-shadow: 1px 3px 3px 1px rgba(0,0,0,0.23);
+    border-radius: 5%;
+    height: 60vh;
+    width: 30%;
+    margin: 1rem 3rem;
+    padding: 1rem 0.02rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.recipe-img img {
+    width: 70%;
+}
+
+.challenge-instruction {
+    padding: 2rem;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+footer {
+    padding: 0 3rem 2rem 3rem;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
