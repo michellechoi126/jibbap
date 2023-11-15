@@ -1,52 +1,52 @@
 const allRecipes = [
-    {
-        name: 'Tteokbokki (Spicy Rice Cakes)',
-        pic: 'https://drivemehungry.com/wp-content/uploads/2021/02/tteokbokki-korean-rice-cakes-5.jpg',
-        main_ingredients: [
-            '350g Korean rice cakes', 
-            '150g Korean fish cakes', 
-            '2 cups Korean soup stock', 
-            '60g onion'
-        ],
-        sauce_ingredients: [
-            '3 tbsp gochujang', 
-            '1.5 tbsp sugar', 
-            '1 tbsp soy sauce', 
-            '1 tsp minced garlic', 
-            '1 tsp gochugaru'
-        ],
-        instructions: [
-            'Unless your rice cakes are soft already, soak them in warm water for 10 mins.', 
-            'Boil the soup stock in a shallow pot over medium high heat and dissolve the tteokbokki sauce by stirring it with a spatula. Once the seasoned stock is boiling, add the rice cakes, fish cakes and onion. Boil them a further 3 to 5 mins until the rice cakes are fully cooked. Then, to thicken the sauce and to deepen the flavor, simmer it over low heat for a further 2 to 4 mins.', 
-            'Add the sesame oil, sesame seeds, and green onion then quickly stir. Serve warm.']
-    },
-    {
-        name: 'Kimchi Jjigae Stew',
-        pic: 'https://www.koreanbapsang.com/wp-content/uploads/2014/03/DSC5893-3.jpg',
-        main_ingredients: [
-            '1 pound kimchi, cut into bite size pieces', 
-            '¼ cup kimchi brine', 
-            '½ pound pork shoulder (or pork belly)', 
-            '½ package of tofu (optional), sliced into ½ inch thick bite size pieces', 
-            '3 green onions', 
-            '1 medium onion, sliced (1 cup)', 
-            '1 teaspoon kosher salt', 
-            '2 teaspoons sugar', 
-            '2 teaspoons gochugaru (Korean hot pepper flakes)', 
-            '1 tablespoon gochujang (hot pepper paste)', 
-            '1 teaspoon toasted sesame oil', 
-            '2 cups of anchovy stock (or chicken or beef broth)'
-        ],
-        instructions: [
-            'Place the kimchi and kimchi brine in a shallow pot. Add pork and onion', 
-            'Slice 2 green onions diagonally and add them to the pot.', 
-            'Add salt, sugar, hot pepper flakes, and hot pepper paste. Drizzle sesame oil over top and add the anchovy stock', 
-            'Cover and cook for 10 minutes over medium high heat.', 
-            'Open and mix in the seasonings with a spoon. Lay the tofu over top.', 
-            'Cover and cook another 10 to 15 minutes over medium heat.', 
-            'Chop 1 green onion and put it on the top of the stew. Remove from the heat and serve right away with rice.'
-        ]
-    },
+    // {
+    //     name: 'Tteokbokki (Spicy Rice Cakes)',
+    //     pic: 'https://drivemehungry.com/wp-content/uploads/2021/02/tteokbokki-korean-rice-cakes-5.jpg',
+    //     main_ingredients: [
+    //         '350g Korean rice cakes', 
+    //         '150g Korean fish cakes', 
+    //         '2 cups Korean soup stock', 
+    //         '60g onion'
+    //     ],
+    //     sauce_ingredients: [
+    //         '3 tbsp gochujang', 
+    //         '1.5 tbsp sugar', 
+    //         '1 tbsp soy sauce', 
+    //         '1 tsp minced garlic', 
+    //         '1 tsp gochugaru'
+    //     ],
+    //     instructions: [
+    //         'Unless your rice cakes are soft already, soak them in warm water for 10 mins.', 
+    //         'Boil the soup stock in a shallow pot over medium high heat and dissolve the tteokbokki sauce by stirring it with a spatula. Once the seasoned stock is boiling, add the rice cakes, fish cakes and onion. Boil them a further 3 to 5 mins until the rice cakes are fully cooked. Then, to thicken the sauce and to deepen the flavor, simmer it over low heat for a further 2 to 4 mins.', 
+    //         'Add the sesame oil, sesame seeds, and green onion then quickly stir. Serve warm.']
+    // },
+    // {
+    //     name: 'Kimchi Jjigae Stew',
+    //     pic: 'https://www.koreanbapsang.com/wp-content/uploads/2014/03/DSC5893-3.jpg',
+    //     main_ingredients: [
+    //         '1 pound kimchi, cut into bite size pieces', 
+    //         '¼ cup kimchi brine', 
+    //         '½ pound pork shoulder (or pork belly)', 
+    //         '½ package of tofu (optional), sliced into ½ inch thick bite size pieces', 
+    //         '3 green onions', 
+    //         '1 medium onion, sliced (1 cup)', 
+    //         '1 teaspoon kosher salt', 
+    //         '2 teaspoons sugar', 
+    //         '2 teaspoons gochugaru (Korean hot pepper flakes)', 
+    //         '1 tablespoon gochujang (hot pepper paste)', 
+    //         '1 teaspoon toasted sesame oil', 
+    //         '2 cups of anchovy stock (or chicken or beef broth)'
+    //     ],
+    //     instructions: [
+    //         'Place the kimchi and kimchi brine in a shallow pot. Add pork and onion', 
+    //         'Slice 2 green onions diagonally and add them to the pot.', 
+    //         'Add salt, sugar, hot pepper flakes, and hot pepper paste. Drizzle sesame oil over top and add the anchovy stock', 
+    //         'Cover and cook for 10 minutes over medium high heat.', 
+    //         'Open and mix in the seasonings with a spoon. Lay the tofu over top.', 
+    //         'Cover and cook another 10 to 15 minutes over medium heat.', 
+    //         'Chop 1 green onion and put it on the top of the stew. Remove from the heat and serve right away with rice.'
+    //     ]
+    // },
     {
         name: 'Pajeon (Korean Pancake)',
         pic: 'https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/vimdb/270697.jpg',
@@ -90,6 +90,7 @@ const recipeNameEl = document.querySelectorAll('.recipe-name');
 const recipeIngredients = document.querySelector('.ingredients');
 const recipeInstructions = document.querySelector('.instructions');
 const instructionEl = document.querySelector('.challenge-instruction');
+const recipeImg = document.querySelector('.recipe-image')
 const challengeBtn = document.querySelector('.challenge-btn');
 
 
@@ -117,5 +118,6 @@ challengeBtn.addEventListener('click', (event) => {
         li.append(step);
         recipeInstructions.appendChild(li);
     })
-
+    recipeImg.src = recipe.pic;
+    recipeImg.style.filter = 'none';
 })
