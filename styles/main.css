@@ -3,7 +3,7 @@
 }
 
 body {
-    background-image: url('https://img.freepik.com/premium-vector/abstract-simple-dot-pattern-design-decoration-background_121035-35.jpg?w=2000');
+    background-image: url('../assets/bg-img.jpg');
     background-repeat: repeat;
     background-size: 10px;
     font-family: 'Bubbler One';
