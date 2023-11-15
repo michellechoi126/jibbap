@@ -99,6 +99,12 @@ main {
     align-items: start;
 }
 
+.recipe-display {
+    width: 40%;
+    display: none;
+    flex-direction: column;
+}
+
 footer {
     padding: 0 3rem 2rem 3rem;
     height: 4rem;

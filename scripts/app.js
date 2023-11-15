@@ -1,4 +1,4 @@
-const recipes = [
+const allRecipes = [
     {
         name: 'Tteokbokki (Spicy Rice Cakes)',
         pic: 'https://drivemehungry.com/wp-content/uploads/2021/02/tteokbokki-korean-rice-cakes-5.jpg',
@@ -16,9 +16,9 @@ const recipes = [
             '1 tsp gochugaru'
         ],
         instructions: [
-            '1. Unless your rice cakes are soft already, soak them in warm water for 10 mins.', 
-            '2. Boil the soup stock in a shallow pot over medium high heat and dissolve the tteokbokki sauce by stirring it with a spatula. Once the seasoned stock is boiling, add the rice cakes, fish cakes and onion. Boil them a further 3 to 5 mins until the rice cakes are fully cooked. Then, to thicken the sauce and to deepen the flavor, simmer it over low heat for a further 2 to 4 mins.', 
-            '3. Add the sesame oil, sesame seeds, and green onion then quickly stir. Serve warm.']
+            'Unless your rice cakes are soft already, soak them in warm water for 10 mins.', 
+            'Boil the soup stock in a shallow pot over medium high heat and dissolve the tteokbokki sauce by stirring it with a spatula. Once the seasoned stock is boiling, add the rice cakes, fish cakes and onion. Boil them a further 3 to 5 mins until the rice cakes are fully cooked. Then, to thicken the sauce and to deepen the flavor, simmer it over low heat for a further 2 to 4 mins.', 
+            'Add the sesame oil, sesame seeds, and green onion then quickly stir. Serve warm.']
     },
     {
         name: 'Kimchi Jjigae Stew',
@@ -38,13 +38,13 @@ const recipes = [
             '2 cups of anchovy stock (or chicken or beef broth)'
         ],
         instructions: [
-            '1. Place the kimchi and kimchi brine in a shallow pot. Add pork and onion', 
-            '2. Slice 2 green onions diagonally and add them to the pot.', 
-            '3. Add salt, sugar, hot pepper flakes, and hot pepper paste. Drizzle sesame oil over top and add the anchovy stock', 
-            '4. Cover and cook for 10 minutes over medium high heat.', 
-            '5. Open and mix in the seasonings with a spoon. Lay the tofu over top.', 
-            '6. Cover and cook another 10 to 15 minutes over medium heat.', 
-            '7. Chop 1 green onion and put it on the top of the stew. Remove from the heat and serve right away with rice.'
+            'Place the kimchi and kimchi brine in a shallow pot. Add pork and onion', 
+            'Slice 2 green onions diagonally and add them to the pot.', 
+            'Add salt, sugar, hot pepper flakes, and hot pepper paste. Drizzle sesame oil over top and add the anchovy stock', 
+            'Cover and cook for 10 minutes over medium high heat.', 
+            'Open and mix in the seasonings with a spoon. Lay the tofu over top.', 
+            'Cover and cook another 10 to 15 minutes over medium heat.', 
+            'Chop 1 green onion and put it on the top of the stew. Remove from the heat and serve right away with rice.'
         ]
     },
     {
@@ -68,20 +68,54 @@ const recipes = [
             '⅛ tsp sugar'
         ],
         instructions: [
-            '1. Gather all the ingredients.', 
-            '2. Combine all the ingredients for the spicy dipping sauce. Set aside.', 
-            '3. Cut off the ends of 1 bunch green onions/scallions. Then, cut the scallions in half crosswise. If you are worried about flipping a large pancake, cut the scallions shorter and make smaller round pancakes so you can easily flip them.', 
-            '4. Beat ½ large egg in a small bowl. Set aside half an egg per pancake for cooking.', 
-            '5. To make the batter, combine cake flour and Diamond Crystal kosher salt in a medium bowl. Slowly add cold water or sparkling water(you may not need all of it!) and whisk until just combined. The batter should be thinner than a Western breakfast pancake batter and thicker than a crepe batter. Do not overmix the batter because it will create gluten and the pancake will not have a good texture.', '6. Place a nonstick frying pan over medium - high heat. When it is hot, add neutral oil.Then, spread out the scallions on the bottom of the pan and add shrimp on top.', 
-            '7. Drizzle the batter on top to cover the scallions and shrimp. Make sure there is just enough batter between the ingredients so that they will hold together. Take care not to add too much batter, though, or you will end up with doughy pancakes.', 
-            '8. Lightly drizzle the beaten egg (I use half an egg for one pancake) over the batter.Cook for 3 minutes, until the edges of the pancake get crispy and the bottom is golden brown. Flip the pancake using a relatively large spatula or two spatulas, one in each hand. Cook for another 3 minutes, pressing down the pancake with the spatula occasionally, until the pancake is crispy and golden brown. Flip one last time and cook for 30 seconds.', 
-            '9. Transfer the pancake to a cutting board. Cut into small pieces and enjoy with the spicy dipping sauce.'
+            'Gather all the ingredients.', 
+            'Combine all the ingredients for the spicy dipping sauce. Set aside.', 
+            'Cut off the ends of 1 bunch green onions/scallions. Then, cut the scallions in half crosswise. If you are worried about flipping a large pancake, cut the scallions shorter and make smaller round pancakes so you can easily flip them.', 
+            'Beat ½ large egg in a small bowl. Set aside half an egg per pancake for cooking.', 
+            'To make the batter, combine cake flour and Diamond Crystal kosher salt in a medium bowl. Slowly add cold water or sparkling water(you may not need all of it!) and whisk until just combined. The batter should be thinner than a Western breakfast pancake batter and thicker than a crepe batter. Do not overmix the batter because it will create gluten and the pancake will not have a good texture.', 
+            'Place a nonstick frying pan over medium - high heat. When it is hot, add neutral oil.Then, spread out the scallions on the bottom of the pan and add shrimp on top.', 
+            'Drizzle the batter on top to cover the scallions and shrimp. Make sure there is just enough batter between the ingredients so that they will hold together. Take care not to add too much batter, though, or you will end up with doughy pancakes.', 
+            'Lightly drizzle the beaten egg (I use half an egg for one pancake) over the batter.Cook for 3 minutes, until the edges of the pancake get crispy and the bottom is golden brown. Flip the pancake using a relatively large spatula or two spatulas, one in each hand. Cook for another 3 minutes, pressing down the pancake with the spatula occasionally, until the pancake is crispy and golden brown. Flip one last time and cook for 30 seconds.', 
+            'Transfer the pancake to a cutting board. Cut into small pieces and enjoy with the spicy dipping sauce.'
         ]
     }
 ]
 
+
 /* === DOM Elements === */
 const navEl = document.querySelector('nav');
 const hamburgEl = document.querySelector('#hamburger');
+const recipeDisplayEl = document.querySelector('.recipe-display');
+const recipeNameEl = document.querySelectorAll('.recipe-name');
+const recipeIngredients = document.querySelector('.ingredients');
+const recipeInstructions = document.querySelector('.instructions');
+const instructionEl = document.querySelector('.challenge-instruction');
+const challengeBtn = document.querySelector('.challenge-btn');
 
 
+/* === Functions === */
+function randomRecipe() {
+    const recipe = allRecipes[Math.floor(Math.random()*allRecipes.length)];
+    return recipe
+}
+
+/* === Event Listeners === */
+challengeBtn.addEventListener('click', (event) => {
+    instructionEl.style.display = "none";
+    recipeDisplayEl.style.display = 'flex';
+    const recipe = randomRecipe()
+    recipeNameEl.forEach(e => {
+        e.innerText = recipe.name
+    })
+    recipe.main_ingredients.forEach(ingredient => {
+        const li = document.createElement('li');
+        li.append(ingredient);
+        recipeIngredients.appendChild(li);
+    })
+    recipe.instructions.forEach(step => {
+        const li = document.createElement('li');
+        li.append(step);
+        recipeInstructions.appendChild(li);
+    })
+
+})
