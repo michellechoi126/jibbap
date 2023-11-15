@@ -10,6 +10,11 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/2cd6f8baf6.js" crossorigin="anonymous"></script>
 
+    <!-- Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bubbler+One&family=Short+Stack&family=Special+Elite&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles/main.css">
     <script defer src="scripts/app.js"></script>
     
@@ -19,9 +24,10 @@
     <header>
         <nav>
             <ul>
-                <a href="#" class="nav-link">Home</a>
-                <a href="#" class="nav-link">Recipes</a>
-                <a href="#" class="nav-link">About</a>
+                <a href="#" class="close-btn">&#215</a>
+                <a href="#" class="nav-link home">Home</a>
+                <a href="#" class="nav-link recipes-link">Recipes</a>
+                <a href="#" class="nav-link about-link">About</a>
             </ul>
         </nav>
         <button class="hamburger-icon" id="hamburger">
@@ -31,23 +37,26 @@
                 <rect y="60" width="75" height="10"></rect>
             </svg>
         </button>
-        <div class="title">
+        <a href="#" class="title">
             <img src="assets/logo.png" alt="logo">
-            &nbsp;
             <h1>JibBap</h1>
-        </div>
+        </a>
     </header>
     <main>
         <div class="random-recipe">
             <div class="recipe-img">
                 <img src="https://worldstrides.com/wp-content/uploads/2015/07/MAP_Korea_gyeonbokgung-palace-seoul_18759736.jpg" alt="recipe image" class="recipe-image">
-                <p class="recipe-name">Your Next Meal</p>
+                <p class="recipe-name label">잘 먹겠습니다!</p>
             </div>
             <div class="challenge-instruction">
                 <h2>Recipe Challenge!</h2>
                 <h3>
-                    Welcome to the world of Korean cuisine. If you're new to cooking korean food and don't know where to start, try challenging yourself with a new recipe 
-                    generated at random. Click the button the below to accept the challenge and explore new korean recipes.
+                    Welcome to the world of Korean cuisine. 
+                    <br>
+                    If you're new to cooking korean food and don't know where to start, try challenging yourself with a new recipe 
+                    generated at random. 
+                    <br>
+                    Click the button the below to accept the challenge and explore new korean recipes.
                 </h3>
                 <button class="challenge-btn">도전 콜</button>
             </div>
@@ -55,9 +64,20 @@
                 <h4 class="recipe-name">Recipe Name</h4>
                 <h5>Main Ingredients</h5>
                 <ul class="ingredients"></ul>
+                <h5 class="sauce-label">Sauce Ingredients</h5>
+                <ul class="sauce"></ul>
                 <h5>Instructions</h5>
                 <ol class="instructions"></ol>
             </div>
+        </div>
+        <div class="all-recipes">
+            <p>All Recipes</p>
+            <ul class="recipe-list"></ul>
+        </div>
+        <div class="about">
+            <p>About JibBap (집밥)</p>
+            <p>As the Modern nomadic lifestyle becomes commonplace, it’s easy to feel nostalgic for home. Sometimes all it takes is a familiar aroma or flavor to awaken memories, uplifting or bittersweet, of bygone days and places. In Korean, home cooking is “Jipbap”, literally “Home Rice”. In Korean language Jip (집) means home and Bap (밥) means rice or meal. The expression Jipbap appears frequently in restaurant names, a hint for the hungry passerby as to what will be served inside: Various side dishes, some soup and, naturally, a steaming bowl of rice, one of the countless possible iterations of Korean home cooking. But still satisfying of this homemade foods are different from “Omma Sonmat”. Omma (엄마) means mother, Son (손) means hand and Mat (맛) means taste, so the whole sentence of Omma Sonmat means mother’s cooked taste.In the popular ballad “Jipbap”, released in 2014, singer Kim Bum-Soo (김범수) describes coming home to a quite house after a long workday, weighed down by woes and worries. “Jipbap”, he repeats in the chorus, crying out for the home and family it brings to mind.
+            With its connotations of familial warmth, care and constancy, Jipbap in Korean is not simply a meal but also a source of emotional nourishment and strength.</p>
         </div>
     </main>
     <footer>

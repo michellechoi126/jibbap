@@ -6,6 +6,7 @@ body {
     background-image: url('https://img.freepik.com/premium-vector/abstract-simple-dot-pattern-design-decoration-background_121035-35.jpg?w=2000');
     background-repeat: repeat;
     background-size: 10px;
+    font-family: 'Bubbler One';
 }
 
 a {
@@ -29,6 +30,10 @@ nav ul {
     flex-direction: column;
     justify-content: space-around;
     align-items: left;
+}
+
+.close-btn {
+    font-size: 2rem;
 }
 
 .hamburger-icon {
@@ -82,36 +87,98 @@ nav ul {
     align-items: center;
 }
 
+.recipe-img p {
+    font-size: 1.3rem;
+    text-shadow: 1px 1px 0px #757575;
+}
+
 .recipe-img img {
-    width: 70%;
-    filter: blur(8px);
+    width: 60%;
+    filter: blur(10px);
 }
 
 .challenge-instruction {
     padding: 2rem;
-    width: 40%;
+    height: 100vh;
+    width: 35%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
 }
 
+.challenge-instruction h2 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.challenge-instruction h3 {
+    font-size: 1.2rem;
+    padding: 1rem 2rem 1rem 0;
+}
+
+.challenge-btn {
+    font-size: 1.2rem;
+    box-shadow: 1px 3px 3px 1px rgba(0,0,0,0.23);;
+}
+
 .recipe-display {
-    top: 50vh;
-    height: 100%;
+    position: relative;
+    height: 100vh;
+    top: 20%;
     width: 40%;
     display: none;
     flex-direction: column;
-    border: 2px solid red;
+}
+
+.recipe-name {
+    margin: 0;
+    font-size: 1.4rem;
+}
+
+.recipe-display h5 {
+    font-size: 1.2rem;
+}
+
+.ingredients {
+    margin: 0;
+}
+
+.sauce {
+    margin: 0;
+}
+
+.instructions {
+    margin: 0
+}
+
+.all-recipes {
+    display: none;
+    margin: 5rem;
+    flex-direction: column;
+    font-size: 1.3rem;
+}
+
+.about {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin: 3rem;
 }
 
 footer {
-    position: fixed;
+    position: absolute;
     bottom: 0;
-    width: 100%;
-    padding: 0 3rem 2rem 3rem;
-    height: 4rem;
+    width: 95%;
+    margin: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 1.1rem;
+}
+
+footer div {
+    font-size: 1.5rem;
 }
